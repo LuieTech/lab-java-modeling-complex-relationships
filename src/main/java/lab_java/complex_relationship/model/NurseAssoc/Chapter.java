@@ -1,4 +1,4 @@
-package lab_java.complex_relationship.model;
+package lab_java.complex_relationship.model.NurseAssoc;
 
 import jakarta.persistence.*;
 

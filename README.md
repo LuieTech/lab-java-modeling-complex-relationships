@@ -46,9 +46,9 @@ Once you finish the assignment, submit a URL link to your repository or your pul
   - `title`: the title of the event
   - `list`: a list of guests that are invited to the event.
 
-- Each guest has the following properties:
-  - `name`: the guest's name
-  - `status`: the guest's response, which can be _ATTENDING_, _NOT_ATTENDING_, or _NO_RESPONSE_
+- Each guestList has the following properties:
+  - `name`: the guestList's name
+  - `status`: the guestList's response, which can be _ATTENDING_, _NOT_ATTENDING_, or _NO_RESPONSE_
 
 In addition to the typical event properties, Conferences also have a list of Speakers.
 

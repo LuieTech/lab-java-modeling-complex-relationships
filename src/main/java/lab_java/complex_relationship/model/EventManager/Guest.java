@@ -1,25 +1,23 @@
-package lab_java.complex_relationship.model;
+package lab_java.complex_relationship.model.EventManager;
 
-import jakarta.persistence.*;
-
-import java.util.Date;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.Id;
 
 @Entity
-public class Member {
-
+public class Guest {
+    @Id
     private String name;
     @Enumerated(EnumType.STRING)
     private Status status;
-    @Temporal(TemporalType.DATE)
-    private Date renewalDate;
 
-    public Member() {
+    public Guest() {
     }
 
-    public Member(String name, Status status, Date renewalDate) {
+    public Guest(String name, Status status) {
         this.name = name;
         this.status = status;
-        this.renewalDate = renewalDate;
     }
 
     public String getName() {
@@ -38,20 +36,11 @@ public class Member {
         this.status = status;
     }
 
-    public Date getRenewalDate() {
-        return renewalDate;
-    }
-
-    public void setRenewalDate(Date renewalDate) {
-        this.renewalDate = renewalDate;
-    }
-
     @Override
     public String toString() {
-        return "Member{" +
+        return "Guest{" +
                 "name='" + name + '\'' +
                 ", status=" + status +
-                ", renewalDate=" + renewalDate +
                 '}';
     }
 }
